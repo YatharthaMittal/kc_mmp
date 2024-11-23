@@ -20,6 +20,7 @@ body{color: var(--wb-para); font-size: 16px; line-height: normal;font-family: 'N
 .msg, .main, .quality, .about, .industries, .download, footer{margin-top: 80px;}
 
 /* main section */
+header{padding-top: 50px;}
 .intro .container{height: 1450px;}
 
 .line_wrapper{transform: translate(0px, -15%);will-change: transform;}
@@ -57,18 +58,10 @@ body{color: var(--wb-para); font-size: 16px; line-height: normal;font-family: 'N
   .quality .swiper-slide-active a, .quality .swiper-slide-active p{display: block;transform: translate(0px, -18px);}
 
   /* about section */
-  .about.aboutswiper {
+  .about .aboutmyswiper {
     width:fit-content;
     height: 100%;
   }
-  /* .about.aboutswiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
 
   .about .swiper-slide img {
     display: block;
@@ -76,86 +69,17 @@ body{color: var(--wb-para); font-size: 16px; line-height: normal;font-family: 'N
     height: 420px;
     object-fit: cover;
   }
+  .about .swiper-pagination{bottom: 35px;}
+  /* .aboutmySwiper{border: 2px solid var(--wb-border);} */
   .about .swiper-pagination-bullet, .inds_wrapper .swiper-pagination-bullet{width: 40px;height: 6px; border-radius: 8px;background-color: var(--wb-para);}
   .about .swiper-pagination-bullet-active, .inds_wrapper .swiper-pagination-bullet-active{background-color: var(--dark-blue);}
   .about_quote{font-size: 28px;font-weight: 600;line-height: normal;position: relative;margin-bottom: 30px;}
-  .about_quote::before{content: '';position: absolute;background-image: url('../images/about_quote.png');background-repeat: no-repeat;width: 85px;height: 52px;}
-  /* .value-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
-.circle-container {
-    position: relative;z-index: 3;
-    width: 8rem;
-    height: 8rem;
-    margin-bottom: 1rem;
-}
-
-.background-circle {
-    position: relative;
-    inset: 0;
-    border-radius: 50%;
-    background-color: #f3f4f6;
-}
-
-.gradient-border {
-    position: absolute;
-    inset: 0;
-    border-radius: 50%;
-    clip-path: circle(50% at 50% 50%);
-    animation: spin 4s linear infinite;
-}
-
-.inner-circle {
-    position: absolute;
-    inset: 0.25rem;
-    background-color: white;
-    border-radius: 50%;
-}
-
-.content {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.icon {
-    font-size: 1.5rem;
-}
-
-.value-name {position: absolute;z-index: 4;background-color: white;padding: 2px;}
-
-
-/* Gradient colors for each value */
-.respect-gradient {
-    background: linear-gradient(to right, #f87171, #a855f7);
-}
-
-.commitment-gradient {
-    background: linear-gradient(to right, #2dd4bf, #facc15);
-}
-
-.growth-gradient {
-    background: linear-gradient(to right, #60a5fa, #2dd4bf);
-}
-
-.ethics-gradient {
-    background: linear-gradient(to right, #4ade80, #facc15);
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
+  .about_quote::before{content: '';position: absolute;background-image: url('../images/about_quote.png');background-repeat: no-repeat;width: 85px;height: 52px;top: -40px;left: -50px;}
+  .values-grid{display: flex;gap:45px;justify-content: space-between;}
+  .vision_box{padding: 24px 30px; border-top: 2px solid var(--wb-border);}
+  .testimonials{padding: 60px 80px 30px;}
+  .quote{padding:20px 40px;border-bottom: 2px solid var(--wb-border); border-top: 2px solid var(--wb-border);}
+  .values_wrapper{padding: 10px;}
   /* about section */
 
   /* industries_slider */
@@ -172,7 +96,7 @@ body{color: var(--wb-para); font-size: 16px; line-height: normal;font-family: 'N
   .download_wrapper{width: 700px; margin: 0 auto;}
   .footer_wrapper{display: flex;justify-content: space-between;}
   .left_footer{width: 500px;text-align: left;}
-  .ft_social, .ft_call, .ft_mail{display: flex;margin-top: 20px;}
+  .ft_social, .ft_call, .ft_mail{display: flex;margin-top: 20px;align-items: center;gap: 10px;}
   .ft_call a, .ft_mail a{color: var(--dark-blue);text-decoration: none;}
   .ft_social{gap: 25px; justify-content: space-around;}
   /* download */
