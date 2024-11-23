@@ -1,0 +1,18 @@
+@media only screen and (max-width: 992px) {
+    .intro .container{height: auto;}
+    .lines{display: none;}
+    .heading{font-size: 56px;line-height: normal;}
+    .line_wrapper{transform: translate(0px, 0px);}
+    .form_wrapper{width: 100%;padding: 60px;margin-bottom: 30px;}
+    .form_wrapper label{line-height: normal;}
+    .form_wrapper .row > div{margin-bottom: 20px;}
+    .prod_box{flex-direction: column;gap: 20px;transform: translate(0px, 0px);}
+    .about .row .col-lg-4{border: none !important;}
+
+}
+@media only screen and (max-width: 992px) {
+    .footer_wrapper{flex-direction: column;gap: 20px;}
+    .left_footer{width: 100%;}
+    .ft_social{gap: 0;}
+    .ft_call, .ft_mail{justify-content: center;margin-top: 30px;}
+}

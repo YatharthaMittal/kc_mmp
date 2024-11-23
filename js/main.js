@@ -19,6 +19,18 @@ var swiper = new Swiper(".mySwiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+      // when window width is >= 320px
+      991: {
+        slidesPerView: auto,
+        spaceBetween: 30
+      },
+      // when window width is >= 480px
+      1024: {
+        slidesPerView: auto,
+        spaceBetween: 30
+      },
+    }
   });
 
   // about slide
@@ -31,11 +43,26 @@ var swiper = new Swiper(".mySwiper", {
 
   // inds slider
   var indsswiper = new Swiper(".indusmySwiper", {
-    // spaceBetween: 30,
-    // centeredSlides: false,
     slidesPerView: 3,
     pagination: {
       el: ".swiper-pagination",
       dynamicBullets: true,
     },
+    breakpoints: {
+      320: {
+        slidesPerView: auto,
+        spaceBetween: 10
+      },
+      // 480px and up
+      480: {
+        slidesPerView: auto,
+        spaceBetween: 15
+      },
+      991: {
+        slidesPerView: auto,  
+      },
+      1024: {
+        slidesPerView: auto,
+      },
+    }
   });

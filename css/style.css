@@ -93,7 +93,7 @@ header{padding-top: 50px;}
   /* industries_slider */
 
   /* download */
-  .download_wrapper{width: 700px; margin: 0 auto;}
+  /* .download_wrapper{width: 700px; margin: 0 auto;} */
   .footer_wrapper{display: flex;justify-content: space-between;}
   .left_footer{width: 500px;text-align: left;}
   .ft_social, .ft_call, .ft_mail{display: flex;margin-top: 20px;align-items: center;gap: 10px;}
