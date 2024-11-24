@@ -13,9 +13,9 @@
 }
 @media only screen and (max-width: 576px) {
     .msg, .main, .quality, .about, .industries, .download, footer{margin-top: 40px;}
-    .heading, .quality h2{font-size: 32px!important;line-height: normal!important;}
+    .heading, .quality h2, .comman_title{font-size: 32px!important;line-height: normal!important;}
     .footer_wrapper{flex-direction: column;gap: 20px;}
-    .left_footer{width: 100%;}
+    .left_footer{width: 100%; text-align: center;}
     .ft_social{gap: 0;}
     .ft_call, .ft_mail{justify-content: center;margin-top: 30px;}
     .btn{padding: 15px 20px;}
@@ -27,4 +27,5 @@
     .values-grid {flex-direction: column;}
     .indus_img{height: 100%;width:100%;}
     .inds_wrapper .btn_2{bottom: -50px;}
+    .inds_wrapper .swiper-slide{margin: 0;}
 }
