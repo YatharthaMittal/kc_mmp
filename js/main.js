@@ -3,8 +3,17 @@ var swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
+    loop: true,
+    infinite: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true, // pauses on hover
+      waitForTransition: true, // waits for transition to end before next slide
+  },
     slidesPerView: "auto",
     loop: true,
+    infinite: true,
     coverflowEffect: {
       rotate: 0,
       stretch: 0,
@@ -20,14 +29,13 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-      // when window width is >= 320px
       991: {
-        slidesPerView: auto,
+        pagination: false,
+        slidesPerView: "auto",
         spaceBetween: 30
       },
-      // when window width is >= 480px
       1024: {
-        slidesPerView: auto,
+        slidesPerView: "auto",
         spaceBetween: 30
       },
     }
@@ -39,6 +47,14 @@ var swiper = new Swiper(".mySwiper", {
       el: ".swiper-pagination",
       dynamicBullets: true,
     },
+    loop: true,
+    infinite: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true, // pauses on hover
+      waitForTransition: true, // waits for transition to end before next slide
+  },
   });
 
   // inds slider
@@ -48,21 +64,30 @@ var swiper = new Swiper(".mySwiper", {
       el: ".swiper-pagination",
       dynamicBullets: true,
     },
+    loop: true,
+    infinite: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true, // pauses on hover
+      waitForTransition: true, // waits for transition to end before next slide
+  },
     breakpoints: {
       320: {
-        slidesPerView: auto,
+        pagination: false,
+        slidesPerView: "auto",
         spaceBetween: 10
-      },
-      // 480px and up
+      },  
       480: {
-        slidesPerView: auto,
+        pagination: false,
+        slidesPerView: "auto",
         spaceBetween: 15
       },
       991: {
-        slidesPerView: auto,  
+        slidesPerView: "auto",  
       },
       1024: {
-        slidesPerView: auto,
+        slidesPerView: "auto",
       },
     }
   });
